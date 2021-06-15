@@ -1,0 +1,3 @@
+imported pygame for visual
+imported sys for loops
+imported numpy for game function/ mechanics 
