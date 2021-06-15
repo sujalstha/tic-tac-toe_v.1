@@ -1,5 +1,6 @@
 import pygame
 import sys
+import numpy as np
 
 pygame.init()
 
@@ -8,12 +9,15 @@ Height = 450
 Line_Width = 10
 
 # colors
-BG_COLOR = (206, 81, 198)
+BG_COLOR = (193, 125, 189)
 LINE_COLOR = (202, 158, 200)
 
 window = pygame.display.set_mode((Width, Height))
 pygame.display.set_caption('TIC TAC TOE v.1')
 window.fill(BG_COLOR)
+
+board = np.zeros((3, 3))
+print(board)
 
 
 def lines():
