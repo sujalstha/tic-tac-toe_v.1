@@ -27,6 +27,16 @@ def lines():
     pygame.draw.line(window, LINE_COLOR, (300, 0), (300, 500), Line_Width)
 
 
+def mark_squares(row, colm, player):
+    board[row][colm] = player
+
+
+mark_squares(0, 0, 1)
+mark_squares(1, 1, 2)
+mark_squares(1, 2, 1)
+mark_squares(0, 2, 2)
+
+print(board)
 lines()
 
 # mainloop for running the game
