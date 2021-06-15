@@ -17,7 +17,6 @@ pygame.display.set_caption('TIC TAC TOE v.1')
 window.fill(BG_COLOR)
 
 board = np.zeros((3, 3))
-print(board)
 
 
 def lines():
@@ -31,12 +30,20 @@ def mark_squares(row, colm, player):
     board[row][colm] = player
 
 
+def available_square(row, colm):
+    if board[row][colm] == 0:
+        return True
+    else:
+        return False
+
+
 mark_squares(0, 0, 1)
 mark_squares(1, 1, 2)
 mark_squares(1, 2, 1)
-mark_squares(0, 2, 2)
 
 print(board)
+print(available_square(0, 2))
+
 lines()
 
 # mainloop for running the game
