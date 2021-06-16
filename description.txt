@@ -1,3 +1,9 @@
-imported pygame for visual
-imported sys for loops
-imported numpy for game function/ mechanics 
+1 - imported pygame for visual
+2 - imported sys for loops
+3 - imported numpy for game function/ mechanics 
+
+5 - initialize pygame modules
+
+7 - width var
+8 - height var
+9 - line width var, for the board

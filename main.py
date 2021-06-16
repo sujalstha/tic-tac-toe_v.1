@@ -38,9 +38,9 @@ def available_square(row, colm):
 
 
 def full_board_checker():
-    for row in range(3):
-        for colm in range(3):
-            if board[row][colm] == 0:
+    for rows in range(3):
+        for colms in range(3):
+            if board[rows][colms] == 0:
                 return False
     return True
 
