@@ -37,21 +37,23 @@ def available_square(row, colm):
         return False
 
 
-def full_board():
+def full_board_checker():
     for row in range(3):
         for colm in range(3):
             if board[row][colm] == 0:
                 return False
+    return True
 
 
 mark_squares(0, 0, 1)
 mark_squares(1, 1, 2)
 mark_squares(1, 2, 1)
 
-print(board)
-print(available_square(0, 2))
 
 lines()
+print(board)
+print(full_board_checker())
+
 
 # mainloop for running the game
 while True:
