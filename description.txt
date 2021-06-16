@@ -7,3 +7,17 @@
 7 - width var
 8 - height var
 9 - line width var, for the board
+
+
+12 - bg_color var is a tuple of a color code which is (light purple)
+13 - line_color var is a tuple of a color code which is (lighter light purple)
+
+15 - window created
+16 - window's title set
+17 - window's background color is set
+
+19 - board is a var taking the value of 3d list containting 3 row and 3 colmun (3*3)
+
+22 - 26 lines is a function, in the function are drawing lines for the board of the tic-tac-toe
+
+29 - 30 mark_squares is a function, in the function the parameter check for which row and colmn is picked and by which player
