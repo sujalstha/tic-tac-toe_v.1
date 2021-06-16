@@ -37,6 +37,13 @@ def available_square(row, colm):
         return False
 
 
+def full_board():
+    for row in range(3):
+        for colm in range(3):
+            if board[row][colm] == 0:
+                return False
+
+
 mark_squares(0, 0, 1)
 mark_squares(1, 1, 2)
 mark_squares(1, 2, 1)
