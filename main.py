@@ -45,10 +45,9 @@ def full_board_checker():
     return True
 
 
-mark_squares(0, 0, 1)
-mark_squares(1, 1, 2)
-mark_squares(1, 2, 1)
-
+for row in range(3):
+    for colm in range(3):
+        mark_squares(row, colm, 1)
 
 lines()
 print(board)
